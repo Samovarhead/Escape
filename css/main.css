@@ -1,0 +1,492 @@
+@font-face {
+    font-family: Brandon Grotesque Light; /* Гарнитура шрифта */
+    src: url(../fonts/BrandonGrotesque-Light.ttf); /* Путь к файлу со шрифтом */
+ }
+@font-face {
+    font-family: Brandon Grotesque Bold; /* Гарнитура шрифта */
+    src: url(../fonts/BrandonGrotesque-Bold.ttf); /* Путь к файлу со шрифтом */
+ }
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #222233;
+}
+header{
+	max-width: 1400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Brandon Grotesque Light;
+}
+menu{
+	max-width: 940px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 160px;
+}
+menu img{
+	margin: 0 20px;
+}
+nav a{
+	text-decoration: none;
+	color: #ffffff;
+	margin: 10px;
+}
+h2{
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 50px;
+	text-align: center;
+}
+h1{
+	font-size: 65px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: Brandon Grotesque Bold;
+	margin-bottom: 80px;
+	text-align: center;
+}
+header button{
+	width: 240px;
+	height: 65px;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-top-width: 3px;
+	border-radius: 3px;
+	color: white;
+	font-family: Brandon Grotesque Bold;
+	font-size: 23px;
+	margin-bottom: 120px;
+	outline: none;
+}
+header button:hover{
+	background-color: #ffffff;
+	color: #222222;
+	cursor: pointer;
+}
+header button:active{
+	background-color: #cccccc;
+	border: none;
+}
+section{
+	max-width: 1400px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-family: Brandon Grotesque Light;
+}
+/* ======================================================= WEB DEV & IDENTITY */
+#web-development{
+	background-color: #ffffff;
+}
+#identity-branding{
+	background-color: #fafafa;
+}
+#identity-branding .container{
+	flex-direction: row-reverse;
+}
+#identity-branding .image-colon{
+	margin: 0 0 0 40px;
+}
+.container{
+	max-width: 940px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-bottom: 55px;
+}
+.text-colon{
+	margin: 0 40px 0;
+}
+.text-colon p{
+	font-size: 18px;
+	color: #777777;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+.image-colon{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 40px;
+}
+.image-colon img{
+	padding: 20px;
+}
+h3{
+	font-size: 59px;
+	font-weight: 500;
+	color: #222222;
+	margin-bottom: 38px;
+}
+h3 span{
+	font-family: Brandon Grotesque Bold;
+}
+/*================================================================ CIRCLE BLOCKS */
+#circle-blocks{
+	background-color: #ffffff;
+}
+#circle-blocks .container{
+}
+.column{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 40px;
+}
+.block{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 45px;
+}
+.icon-block{
+	width: 0;
+	height: 0;
+	padding: 35px;
+	position: relative;
+	background-color: #222222;
+	border-radius: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 18px;
+}
+.text-block h4{
+	font-family: Brandon Grotesque Bold;
+	font-size: 22px;
+	color: #222222;
+	margin-bottom: 15px;
+}
+.text-block p{
+	font-size: 18px;
+	color: #777777;
+}
+/*==================================================================== AWESOME CLIENTS */
+#awesome-clients{
+	background-color: #fafafa;
+}
+#awesome-clients h3{
+	margin-bottom: 10px;
+	font-size: 60px;
+}
+#awesome-clients h3 span{
+	margin-bottom: 10px;
+	font-family: Brandon Grotesque Bold;
+	font-size: 60px;
+}
+#awesome-clients p{
+	font-size: 22px;
+	font-weight: 500;
+	color: #777777;
+	margin-bottom: 50px;
+}
+#awesome-clients .container{
+	flex-direction: column;
+	align-items: center;
+}
+.client{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.client-photo{
+	width: 0;
+	height: 0;
+	padding: 112px;
+	border-radius: 112px;
+	background-color: black;
+}
+.client-say{
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    background-color: #ffffff;
+}
+   #first-client::before, #first-client::after {
+    content: ''; 
+    position: absolute;
+    left: -25px; top: auto;
+    border-top: 8px;
+    border-bottom: 8px;
+    border: 10px solid transparent;
+    border-right: 15px solid #f2f2f2;
+   }
+   #first-client::after {
+    border-right: 15px solid #ffffff;
+    left: -22px; 
+   }
+.client-say div{
+	margin: 30px;
+}
+.client-say{
+	font-size: 26px;
+	font-family: Brandon Grotesque Light;
+	color: #777777;
+}
+.client-say cite{
+	font-size: 20px;
+	font-family: Brandon Grotesque Light;
+	color: #7690C5;
+}
+#client-reverse{
+	flex-direction: row-reverse;
+}
+#second-client::before{
+	content: ''; 
+    position: absolute;
+    right: -25px; top: auto;
+    border-top: 8px;
+    border-bottom: 8px;
+    border: 10px solid transparent;
+    border-left: 15px solid #f2f2f2;
+}
+#second-client::after {
+	content: ''; 
+    position: absolute;
+    right: -25px; top: auto;
+    border-top: 8px;
+    border-bottom: 8px;
+    border: 10px solid transparent;
+    border-left: 15px solid #f2f2f2;
+}
+#second-client::after {
+    border-left: 15px solid #ffffff;
+    right: -22px; 
+   }
+
+/*=============================================================== PARTNERS */
+#partners{
+	background-color: #ffffff;
+}
+#partners .container{
+	margin: 0px;
+}
+#partners .container{
+	align-items: center;
+	justify-content: center;
+}
+.partner-images{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#partners img{
+	margin: 60px 20px;
+}
+/*========================================================== AMAZING TEAM */
+#amazing-team{
+	background-color: #111111;
+	color: #ffffff;
+}
+#amazing-team .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+#amazing-team h2{
+	margin: 0px;
+	font-size: 60px;
+	font-weight: 500;
+}
+#amazing-team h2 span{
+	font-family: Brandon Grotesque Bold;
+	font-size: 60px;
+}
+#amazing-team .container #team-description{
+	margin-bottom: 70px;
+}
+#amazing-team #last-text{
+	text-align: center;
+	margin: 0 12% 0;
+}
+.team-blocks{
+	max-width: 860px;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-bottom: 47px;
+}
+.team-member{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.member-photo{
+	width: 220px;
+	height: 220px;
+	border: 10px solid #ffffff;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.social{
+	display: flex;
+	justify-content: center;
+}
+.social a{
+	width: 40px;
+	height: 40px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	margin: 5px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.tweet{
+	background-image: url(../images/tweet.png);
+	background-size: 55%;
+}
+.facebook{
+	background-image: url(../images/facebook.png);
+	background-size: 30%;
+}
+.pinter{
+	background-image: url(../images/pinter.png);
+	background-size: 45%;
+}
+.gplus{
+	background-image: url(../images/gplus.png);
+	background-size: 50%;
+}
+/*================================================================ SAY HELLO */
+#say-hello{
+	background-color: #7690c5;
+	color: #ffffff;
+}
+#say-hello .container{
+	display: flex;
+	flex-direction: column;
+}
+#say-hello h2{
+	margin: 0px;
+	font-size: 60px;
+	font-weight: 500;
+	text-align: left;
+}
+#say-hello h2 span{
+	font-family: Brandon Grotesque Bold;
+	font-size: 60px;
+}
+#say-hello .cols{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+#say-hello #last-text{
+	text-align: center;
+}
+.cols{
+	margin-bottom: 30px;
+}
+#left-col, #right-col{
+	width: 48%;
+}
+#right-col{
+	display: flex;
+	align-items: stretch;
+}
+#left-col{
+	margin-left: 10px;
+	margin-right: 40px;
+}
+.contacts{
+	display: flex;
+	margin-top: 50px;
+}
+.contact{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.col1, .col2{
+	width: 50%;
+}
+.col1 div, .col2 div{
+	display: flex;
+}
+.contact-icon{
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+}
+input, textarea{
+	width: 90%;
+	border-radius: 5px;
+	padding: 15px;
+	border: 1px solid #d3d3d3;
+	resize: none;
+	margin: 10px;
+	color: #bbbbbb;
+	font-size: 18px;
+	font-family: Brandon Grotesque Light;
+	font-weight: 700;
+}
+textarea{
+	height: 210px;
+}
+::-webkit-input-placeholder {color:#bbbbbb;}
+::-moz-placeholder          {color:#bbbbbb;}/* Firefox 19+ */
+:-moz-placeholder           {color:#bbbbbb;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#bbbbbb;}
+#submit{
+	width: 240px;
+	height: 65px;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-top-width: 3px;
+	border-radius: 3px;
+	color: white;
+	font-family: Brandon Grotesque Bold;
+	font-size: 23px;
+	outline: none;
+}
+#submit:hover{
+	background-color: #ffffff;
+	color: #222222;
+	cursor: pointer;
+}
+#submit:active{
+	background-color: #cccccc;
+	border: none;
+}
+#left-col p{
+	font-size: 18px;
+}
+/*================================================================ ADAPTIVE */
+
+@media screen and (max-width: 700px) {
+	.image-colon{
+		display: none;
+	}
+}
